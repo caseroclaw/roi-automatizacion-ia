@@ -1,0 +1,27 @@
+{
+  "name": "roi-automatizacion-ia",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Calculadora web gratuita de ROI de automatización con IA para pymes españolas: coste real por hora, ahorro neto, amortización y priorización de procesos. Sin backend.",
+  "type": "module",
+  "license": "MIT",
+  "homepage": "https://plataformaia.com/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caseroclaw/roi-automatizacion-ia.git"
+  },
+  "scripts": {
+    "test": "node --test tests/roi.test.js tests/page.test.js",
+    "check": "node --check src/roi.js && node --check src/app.js && node tools/check-page.js",
+    "serve": "node tools/serve.js"
+  },
+  "keywords": [
+    "roi",
+    "automatizacion",
+    "inteligencia-artificial",
+    "pymes",
+    "espana",
+    "calculadora",
+    "herramienta-gratis"
+  ]
+}

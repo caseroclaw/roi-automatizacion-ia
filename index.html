@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculadora de ROI de automatización con IA para pymes — gratis</title>
+  <meta name="description" content="Calculadora gratuita de ROI de automatización con IA para pymes españolas: coste real por hora con cotización empresarial, horas ahorradas, amortización y priorización de procesos. Sin registro y sin enviar datos.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://caseroclaw.github.io/roi-automatizacion-ia/">
+  <meta property="og:title" content="Calculadora de ROI de automatización con IA — Plataforma IA">
+  <meta property="og:description" content="Pon cifra a lo que te cuesta cada proceso manual y descubre en cuántos meses se amortiza automatizarlo. Gratis, sin registro y sin enviar datos.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="modulepreload" href="src/roi.js">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        "name": "Calculadora de ROI de automatización con IA — Plataforma IA",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web (cualquier navegador moderno)",
+        "url": "https://caseroclaw.github.io/roi-automatizacion-ia/",
+        "inLanguage": ["es", "en"],
+        "isAccessibleForFree": true,
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+        "featureList": [
+          "Coste por hora realmente cargado (salario bruto + 31,4 % de cotización empresarial)",
+          "Horas al año que consume cada proceso manual",
+          "Ahorro neto anual descontando mantenimiento",
+          "Amortización de la inversión en meses",
+          "Retorno neto a tres años",
+          "Priorización por matriz horas/mes frente a dificultad",
+          "Informe en texto y CSV listos para pegar en una propuesta"
+        ],
+        "creator": {
+          "@type": "Organization",
+          "name": "Plataforma IA",
+          "url": "https://plataformaia.com/",
+          "description": "Consultora de automatización con IA para pymes en España, con sede en Madrid."
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Cuánto cuesta de verdad una hora de trabajo administrativo en España?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "El coste para la empresa no es el salario bruto por hora: hay que sumar la cotización empresarial (en torno al 31,4 % del salario bruto en el régimen general: 23,6 % de contingencias comunes, 5,5 % de desempleo, 0,2 % de FOGASA, 0,6 % de formación y alrededor de 1,5 % de accidentes de trabajo en oficinas) y dividir entre las horas realmente trabajadas al año, que con vacaciones y festivos se quedan en unas 1.750 horas y no en las 1.820 teóricas. Un salario bruto de 24.000 € al año equivale a unos 18,02 € por hora efectiva, no a 13,19 €."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué porcentaje de un proceso se puede automatizar con IA?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Depende de cuántas excepciones tenga el proceso. Las tareas con reglas estables y documentos homogéneos (extraer datos de facturas, registrar altas, enviar recordatorios, generar informes periódicos) suelen automatizarse entre el 60 % y el 85 %. Los procesos con mucho criterio humano o casos atípicos rara vez pasan del 30-40 %. En esta calculadora el porcentaje es una entrada y no una promesa: la gestión de excepciones casi siempre sigue siendo humana y conviene dejarla fuera del ahorro."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cómo se calcula la amortización de un proyecto de automatización?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Amortización en meses = coste de implantación ÷ ahorro neto anual × 12, donde el ahorro neto ya descuenta el coste recurrente de mantenimiento (licencias, alojamiento, soporte). Un proyecto de 12.000 € que ahorra 7.750 € netos al año se amortiza en unos 18,6 meses. Si el mantenimiento se come el ahorro, la inversión no se amortiza nunca y el resultado debe mostrarse como tal."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué proceso conviene automatizar primero en una pyme?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "El que consume muchas horas al mes y es fácil de implantar. La regla práctica es dibujar una matriz de dos ejes —horas al mes ahorradas y dificultad técnica— y atacar primero el cuadrante de muchas horas con poca dificultad, porque financia el resto del plan. Los procesos de muchas horas y alta dificultad se planifican como proyecto; los de pocas horas y alta dificultad casi nunca compensan."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Esta calculadora envía mis datos a algún servidor?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. La página no tiene backend, no hace peticiones de red y no usa cookies de seguimiento. Todo el cálculo ocurre en tu navegador y los procesos que introduces solo se guardan en el almacenamiento local de tu propio equipo, si decides guardarlos, para que puedas volver más tarde."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Un ROI positivo garantiza que el proyecto funcione?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. El cálculo solo comprueba la aritmética de unos supuestos. Los tres supuestos que más se equivocan son el porcentaje automatizable, el coste real de mantenimiento y el tiempo interno del equipo para definir y validar el proceso. Por eso un piloto de cuatro semanas sobre un único proceso, con métricas acordadas antes de empezar, es más fiable que cualquier hoja de cálculo."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">Herramienta gratuita · Plataforma IA</p>
+      <h1>Calculadora de ROI de automatización con IA</h1>
+      <p class="lead">Pon cifra a lo que te cuesta cada proceso manual y descubre en cuántos meses se amortiza automatizarlo. Coste por hora <strong>realmente cargado</strong> (con la cotización empresarial española), ahorro neto descontando mantenimiento y prioridad de cada proceso. Todo se calcula en tu navegador: no hay registro ni se envían datos.</p>
+    </header>
+
+    <section class="panel" aria-labelledby="supuestos">
+      <h2 id="supuestos">1. Supuestos de coste</h2>
+      <div class="grid">
+        <label>Cotización empresarial (%)
+          <input id="tasaSS" type="text" inputmode="decimal" value="31,4">
+          <small>31,4 % por defecto: 23,6 contingencias + 5,5 desempleo + 0,2 FOGASA + 0,6 formación + 1,5 AT/EP.</small>
+        </label>
+        <label>Horas efectivas por persona y año
+          <input id="horasEfectivas" type="text" inputmode="numeric" value="1750">
+          <small>Descontando vacaciones, festivos y absentismo. No uses 1.820 h teóricas.</small>
+        </label>
+        <label>Semanas efectivas al año
+          <input id="semanas" type="text" inputmode="numeric" value="46">
+          <small>52 semanas menos 4 de vacaciones y unos 14 festivos.</small>
+        </label>
+      </div>
+    </section>
+
+    <section class="panel" aria-labelledby="procesos">
+      <h2 id="procesos">2. Procesos candidatos</h2>
+      <p class="hint">Añade hasta seis procesos. «Horas/semana» son las de <em>una</em> persona; el salario es el bruto anual del perfil que hace la tarea.</p>
+      <div class="tabla-scroll">
+        <table id="tablaProcesos">
+          <thead>
+            <tr>
+              <th scope="col">Proceso</th>
+              <th scope="col">Personas</th>
+              <th scope="col">Horas/semana<br>por persona</th>
+              <th scope="col">Bruto anual<br>por persona (€)</th>
+              <th scope="col">Automatizable (%)</th>
+              <th scope="col">Implantación (€)</th>
+              <th scope="col">Mantenimiento<br>anual (€)</th>
+              <th scope="col">Dificultad<br>1-5</th>
+              <th scope="col"><span class="sr">Quitar</span></th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="acciones">
+        <button type="button" id="anadir" class="secundario">+ Añadir proceso</button>
+        <button type="button" id="ejemplo" class="secundario">Cargar ejemplo real</button>
+        <button type="button" id="limpiar" class="secundario">Vaciar</button>
+      </div>
+    </section>
+
+    <section class="panel" aria-labelledby="resultados">
+      <h2 id="resultados">3. Resultado</h2>
+      <div id="resumen" class="resumen" aria-live="polite"></div>
+      <div class="tabla-scroll">
+        <table id="tablaResultados">
+          <thead>
+            <tr>
+              <th scope="col">Proceso</th>
+              <th scope="col">Coste actual<br>al año</th>
+              <th scope="col">Horas<br>ahorradas/año</th>
+              <th scope="col">Ahorro neto<br>al año</th>
+              <th scope="col">Amortización</th>
+              <th scope="col">Neto a 3 años</th>
+              <th scope="col">Prioridad</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="acciones">
+        <button type="button" id="copiar">Copiar informe</button>
+        <button type="button" id="descargarTxt" class="secundario">Descargar informe (.txt)</button>
+        <button type="button" id="descargarCsv" class="secundario">Descargar CSV</button>
+      </div>
+      <p id="aviso" class="aviso" role="status"></p>
+    </section>
+
+    <section class="prosa">
+      <h2>Cómo se calcula (y qué no calcula)</h2>
+      <p>La fórmula es aritmética sencilla y está publicada en el código de la página:</p>
+      <ul>
+        <li><strong>Coste por hora cargado</strong> = salario bruto anual × (1 + cotización empresarial) ÷ horas efectivas al año.</li>
+        <li><strong>Horas al año</strong> = personas × horas por persona y semana × semanas efectivas.</li>
+        <li><strong>Ahorro neto</strong> = coste anual del proceso × porcentaje automatizable − mantenimiento anual.</li>
+        <li><strong>Amortización (meses)</strong> = inversión ÷ ahorro neto anual × 12. Si el ahorro neto es cero o negativo, la respuesta es «nunca».</li>
+        <li><strong>Neto a 3 años</strong> = ahorro neto anual × 3 − inversión.</li>
+      </ul>
+      <p>Lo que esta calculadora <strong>no</strong> hace: no estima ingresos adicionales por vender más ni por atender fuera de horario, no valora el riesgo de error humano y no sustituye a un piloto. Sirve para lo que sirve un buen caso de negocio: para dejar por escrito los supuestos antes de empezar y poder discutirlos.</p>
+
+      <h2>El error más común: usar el salario por hora en lugar del coste por hora</h2>
+      <p>Un salario bruto de 24.000 € al año son 13,19 € por hora si divides entre 1.820 horas teóricas. Pero la empresa paga además alrededor de un 31,4 % de cotización y la persona trabaja unas 1.750 horas efectivas: el coste real ronda los 18,02 € por hora, un 37 % más. Ese desvío es el que hace que muchos casos de negocio de automatización parezcan peores de lo que son, o que se aprueben proyectos que luego no se amortizan porque nadie metió el mantenimiento en la ecuación.</p>
+
+      <h2>Priorizar: horas al mes frente a dificultad</h2>
+      <p>Con seis procesos sobre la mesa, el orden importa más que la suma. La herramienta clasifica cada uno en cuatro cuadrantes:</p>
+      <ul>
+        <li><strong>Empezar aquí</strong> — muchas horas al mes y poca dificultad: es el piloto que financia el resto.</li>
+        <li><strong>Planificar como proyecto</strong> — muchas horas pero difícil: merece alcance, fases y patrocinio, no un experimento.</li>
+        <li><strong>Solo si hay capacidad</strong> — pocas horas y fácil: mejoras menores, no prioridad.</li>
+        <li><strong>Dejar para más adelante</strong> — pocas horas y difícil: casi nunca compensa.</li>
+      </ul>
+      <p>Si quieres el marco completo, tenemos dos guías: <a href="https://plataformaia.com/es/blog/ia-precios-margenes-pymes">cómo afecta la IA a precios y márgenes en una pyme</a> y <a href="https://plataformaia.com/es/blog/automatizacion-procesos-backoffice-ia-pymes">qué procesos de back-office se automatizan primero</a>.</p>
+
+      <h2>Preguntas frecuentes</h2>
+      <details>
+        <summary>¿Cuánto cuesta de verdad una hora de trabajo administrativo en España?</summary>
+        <p>Alrededor de un 31,4 % más que el salario bruto por hora, y calculada sobre horas efectivas (unas 1.750 al año). Un bruto de 24.000 € son unos 18,02 € por hora real para la empresa.</p>
+      </details>
+      <details>
+        <summary>¿Qué porcentaje de un proceso se puede automatizar con IA?</summary>
+        <p>Entre el 60 % y el 85 % en tareas con reglas estables y documentos homogéneos; del 30 % al 40 % cuando hay mucho criterio humano. La gestión de excepciones casi siempre sigue siendo humana.</p>
+      </details>
+      <details>
+        <summary>¿Cómo se calcula la amortización de un proyecto de automatización?</summary>
+        <p>Inversión ÷ ahorro neto anual × 12. El ahorro neto ya descuenta licencias, alojamiento y soporte; si el mantenimiento se come el ahorro, la inversión no se amortiza nunca.</p>
+      </details>
+      <details>
+        <summary>¿Qué proceso conviene automatizar primero en una pyme?</summary>
+        <p>El de muchas horas al mes y poca dificultad: es el que se paga solo y financia los siguientes. Los de muchas horas y alta dificultad se planifican como proyecto.</p>
+      </details>
+      <details>
+        <summary>¿Esta calculadora envía mis datos a algún servidor?</summary>
+        <p>No. No hay backend ni peticiones de red; los procesos se guardan solo en el almacenamiento local de tu navegador si pulsas «Guardar».</p>
+      </details>
+      <details>
+        <summary>¿Un ROI positivo garantiza que el proyecto funcione?</summary>
+        <p>No. Valida la aritmética, no los supuestos. Los que más se equivocan son el porcentaje automatizable, el mantenimiento y el tiempo interno del equipo. Por eso un piloto de cuatro semanas con métricas acordadas vale más que cualquier hoja de cálculo.</p>
+      </details>
+
+      <h2>English summary</h2>
+      <p>Free <strong>AI automation ROI calculator</strong> for Spanish SMEs. It uses the real employer cost of an hour — gross salary plus Spain's roughly 31.4 % employer social security contribution, divided by about 1,750 effective hours a year — instead of the nominal hourly wage, subtracts running costs before calling anything a saving, and returns payback in months plus a three-year net. Processes are ranked on a two-axis matrix of hours saved per month against implementation difficulty. Everything runs in the browser: no backend, no tracking, no network requests. A free tool by Plataforma IA, an AI automation consultancy based in Madrid.</p>
+    </section>
+
+    <footer>
+      <p>Herramienta gratuita de <a href="https://plataformaia.com/" target="_blank" rel="noopener">Plataforma IA</a>, consultora de automatización con IA para pymes en España (Madrid). Si quieres validar estos números con un proceso real, empezamos con una <a href="https://plataformaia.com/es/contacto" target="_blank" rel="noopener">evaluación gratuita de 30 minutos</a> y un piloto de cuatro semanas.</p>
+      <p>
+        <a href="https://plataformaia.com/es/consultoria-ia-madrid" target="_blank" rel="noopener">Consultoría IA en Madrid</a> ·
+        <a href="https://plataformaia.com/es/automatizacion-ia" target="_blank" rel="noopener">Automatización de procesos con IA</a> ·
+        <a href="https://caseroclaw.github.io/verifactu-qr-web/" target="_blank" rel="noopener">Generador de QR VeriFactu</a> ·
+        <a href="https://github.com/caseroclaw/roi-automatizacion-ia" target="_blank" rel="noopener">Código de esta página (MIT)</a>
+      </p>
+      <p class="legal">Código MIT. Las cifras de cotización son orientativas para el régimen general en 2026 y deben ajustarse al convenio y al perfil real. Esta herramienta no es asesoramiento fiscal ni financiero.</p>
+    </footer>
+  </main>
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>
