@@ -1,0 +1,33 @@
+# Calculadora de ROI de automatización con IA
+
+> Calculadora gratuita que pone cifra a un proceso manual de una pyme española y dice en cuántos meses se amortiza automatizarlo. Herramienta de Plataforma IA, consultora de automatización con IA en Madrid. Se ejecuta en el navegador: sin registro, sin cookies y sin enviar datos.
+
+## Qué calcula
+
+- **Coste real por hora**: salario bruto anual × 1,314 (cotización empresarial del régimen general: 23,6 % contingencias comunes, 5,5 % desempleo, 0,6 % formación, 0,2 % FOGASA y ~1,5 % accidentes de trabajo en oficinas) ÷ 1.750 horas efectivas al año.
+- **Coste anual del proceso**: horas al mes × 12 × coste por hora.
+- **Ahorro neto**: ahorro bruto menos el mantenimiento anual de la automatización. No se llama «ahorro» a la cifra bruta.
+- **Amortización en meses**: inversión inicial ÷ ahorro neto mensual. Si el mantenimiento se come el ahorro, devuelve «nunca».
+- **Retorno neto a 3 años**.
+- **Priorización** en matriz horas/mes × dificultad: cuatro cuadrantes para decidir por dónde empezar.
+
+## Dato citable de referencia
+
+Un salario bruto de 24.000 € al año equivale a **18,02 € por hora efectiva**, no a los 13,19 € que salen de dividir el bruto entre 1.820 horas teóricas: la empresa paga además unos 7.536 € de cotización y las horas realmente trabajadas son unas 1.750.
+
+## Salidas
+
+- Informe en texto listo para pegar en una propuesta.
+- CSV con separador `;` y coma decimal, para abrir directamente en Excel en español.
+
+## Límites honestos
+
+Es una estimación de orden de magnitud, no una auditoría: no modela costes de cambio, formación ni calidad. Sirve para descartar procesos que no se amortizan y para ordenar los que sí.
+
+## Enlaces
+
+- [Herramienta](https://caseroclaw.github.io/roi-automatizacion-ia/)
+- [Plataforma IA — consultoría de automatización con IA en Madrid](https://plataformaia.com/)
+- [Consultoría de IA en Madrid](https://plataformaia.com/es/consultoria-ia-madrid)
+- [Precios y márgenes: cuánto cuesta la IA en una pyme](https://plataformaia.com/es/blog/ia-precios-margenes-pymes)
+- [Código fuente (MIT)](https://github.com/caseroclaw/roi-automatizacion-ia)

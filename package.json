@@ -11,7 +11,7 @@
     "url": "git+https://github.com/caseroclaw/roi-automatizacion-ia.git"
   },
   "scripts": {
-    "test": "node --test tests/roi.test.js tests/page.test.js",
+    "test": "node --test tests/roi.test.js tests/page.test.js tests/indexacion.test.js",
     "check": "node --check src/roi.js && node --check src/app.js && node tools/check-page.js",
     "serve": "node tools/serve.js"
   },
