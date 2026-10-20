@@ -20,9 +20,13 @@ Un salario bruto de 24.000 € al año equivale a **18,02 € por hora efectiva*
 - Informe en texto listo para pegar en una propuesta.
 - CSV con separador `;` y coma decimal, para abrir directamente en Excel en español.
 
+## Comparativa y límites (actualizado el 20 de octubre de 2026)
+
+Hay al menos tres calculadoras de ROI gratuitas más en español (Resolvo, Summum IA e Impulso Pymes IA) y esta página las compara en una tabla pública: todas parten de un coste/hora que introduce el usuario, mientras que esta calcula el coste de la hora con la cotización del régimen general (31,4 %) y 1.750 horas efectivas. La comparativa se hizo abriendo cada herramienta el 20 de octubre de 2026, sin relación comercial y sin enlazarlas.
+
 ## Límites honestos
 
-Es una estimación de orden de magnitud, no una auditoría: no modela costes de cambio, formación ni calidad. Sirve para descartar procesos que no se amortizan y para ordenar los que sí.
+Es una estimación de orden de magnitud, no una auditoría: no modela ingresos incrementales, costes de cambio, formación, errores evitados ni calidad. No evalúa el riesgo del reglamento europeo de IA (para eso: https://caseroclaw.github.io/radar-ai-act/). Sirve para descartar procesos que no se amortizan y para ordenar los que sí.
 
 ## Enlaces
 
